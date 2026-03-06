@@ -10,6 +10,7 @@
 # without prior written permission from the author.
 #
 # ❤️ Made with dedication and love by khithlainhtet# -----------------------------------------------
+from os import getenv
 from pyrogram import Client
 import config
 from strings.__init__ import LOGGERS
