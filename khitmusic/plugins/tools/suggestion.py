@@ -16,10 +16,10 @@ from khitmusic.utils.database import get_cmode
 from khitmusic.utils.formatters import time_to_seconds
 
 RANDOM_HINDI_QUERIES = [
-    "Insta tending", "Lofi songs", "Latest Hindi Songs", "Romantic Songs", 
-    "Sad Songs", "Punjabi Hits", "Best of Arijit Singh", 
-    "Atif Aslam Hits", "Old Hindi Songs", "90s Bollywood Songs",
-    "Party Songs Hindi", "Indian Lo-fi"
+    "Insta tending", "Lofi songs", "Romantic Songs", 
+    "Sad Songs", "Myanmar Feel Songs", 
+    "Atif Aslam Hits", "Old Myanmar Songs", "Zenith songs",
+    "Party Songs Myanmar"
 ]
 
 def clean_text(title):
@@ -192,7 +192,7 @@ async def show_suggestions(chat_id: int, last_played_title: str):
     try:
         msg = await app.send_message(
             chat_id,
-            text=f"<b>💿 No music is playing!</b>\n\n💡 <i>Use /suggest <code>sahiba</code> or /suggest for suggestions.</i>\n\nHere are some suggestions:",
+            text=f"<b>💿သီချင်းများ ကုန်ဆုံးသွားပါပြီ။ </b>\n\n💡 <i>Use /suggest <code>KHIT</code> or /suggest for suggestions.</i>\n\nHere are some suggestions:",
             reply_markup=InlineKeyboardMarkup(buttons)
         )
 
