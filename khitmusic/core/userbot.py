@@ -13,6 +13,7 @@
 from os import getenv
 from pyrogram import Client
 import config
+import asyncio
 from strings.__init__ import LOGGERS
 from ..logging import LOGGER
 
